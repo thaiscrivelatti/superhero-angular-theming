@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@include mat.core();
+
+// Iron Man Theme
+$ironman-primary:  mat.define-palette(mat.$yellow-palette);
+$ironman-accent: mat.define-palette(mat.$gray-palette);
+$ironman-warn: mat.define-palette(mat.$red-palette);
+$ironman-typography: mat.define-typography-config(
+  $display-4: mat.define-typography-level(101px, 1, 400, "Barlow Condensed", -1.5px),
+  $display-3: mat.define-typography-level(63px, 1, 400, "Barlow Condensed", -0.5px),
+  $display-2: mat.define-typography-level(50px, 1, 400, "Barlow Condensed", 0),
+  $display-1: mat.define-typography-level(36px, 1, 400, "Barlow Condensed", 0.25px),
+  $headline: mat.define-typography-level(25px, 1, 400, "Barlow Condensed", 0),
+  $title: mat.define-typography-level(21px, 1, 400, "Barlow Condensed", 0.15px),
+  $subheading-2: mat.define-typography-level(17px, 1, 400, "Barlow Condensed", 0.15px),
+  $subheading-1: mat.define-typography-level(15px, 1, 400, "Barlow Condensed", 0.1px),
+  $body-1: mat.define-typography-level(20px, 1.2em, 300, "Rasa", 0.5px),
+  $body-2: mat.define-typography-level(18px, 1.2em, 300, "Rasa", 0.25px),
+  $caption: mat.define-typography-level(13px, 1, 600, "Barlow", 0.4px),
+  $button: mat.define-typography-level(13px, 1, 600, "Barlow", 0.3px),
+);
+
+$ironman: mat.define-light-theme((
+  color: (
+    primary: $ironman-primary,
+    accent: $ironman-accent,
+    warn: $ironman-warn
+  ),
+  typography: $ironman-typography,
+));
+
+.ironman {
+  @include mat.all-component-themes($ironman);
+  @include mat.core($ironman-typography);
+}
+
+// Captain America Theme
+$captain-primary:  mat.define-palette(mat.$blue-palette);
+$captain-accent: mat.define-palette(mat.$gray-palette);
+$captain-warn: mat.define-palette(mat.$red-palette);
+$captain-typography: mat.define-typography-config(
+  $display-4: mat.define-typography-level(130px, 1, 700, "Libre Baskerville", -1.5px),
+  $display-3: mat.define-typography-level(82px, 1, 700, "Libre Baskerville", -0.5px),
+  $display-2: mat.define-typography-level(65px, 1, 700, "Libre Baskerville", 0),
+  $display-1: mat.define-typography-level(46px, 1, 700, "Libre Baskerville", 0.25px),
+  $headline: mat.define-typography-level(24px, 1, 700, "Libre Baskerville", 0),
+  $title: mat.define-typography-level(20px, 1, 700, "Libre Baskerville", 0.15px),
+  $subheading-2: mat.define-typography-level(16px, 1, 700, "Libre Baskerville", 0.15px),
+  $subheading-1: mat.define-typography-level(14px, 1, 700, "Libre Baskerville", 0.1px),
+  $body-1: mat.define-typography-level(16px, 1.7em, 300, "Libre Baskerville", 0.5px),
+  $body-2: mat.define-typography-level(14px, 1, 400, "Libre Baskerville", 0.25px),
+  $caption: mat.define-typography-level(12px, 1, 400, "Work Sans", 0.4px),
+  $button: mat.define-typography-level(12px, 1, 400, "Work Sans", 0.4px),
+);
+
+$captain: mat.define-light-theme((
+  color: (
+    primary: $captain-primary,
+    accent: $captain-accent,
+    warn: $captain-warn
+  ),
+  typography: $captain-typography,
+));
+
+.captain {
+  @include mat.all-component-themes($captain);
+  @include mat.core($captain-typography);
+}
+
+// Loki Theme
+$loki-primary:  mat.define-palette(mat.$green-palette);
+$loki-accent: mat.define-palette(mat.$yellow-palette);
+$loki-warn: mat.define-palette(mat.$red-palette);
+$loki-typography: mat.define-typography-config(
+  $display-4: mat.define-typography-level(99px, 1, 400, "Playfair Display", -1.5px),
+  $display-3: mat.define-typography-level(62px, 1, 400, "Playfair Display", -0.5px),
+  $display-2: mat.define-typography-level(49px, 1, 400, "Playfair Display", 0),
+  $display-1: mat.define-typography-level(35px, 1, 400, "Playfair Display", 0.25px),
+  $headline: mat.define-typography-level(25px, 1, 400, "Playfair Display", 0),
+  $title: mat.define-typography-level(21px, 1, 400, "Playfair Display", 0.15px),
+  $subheading-2: mat.define-typography-level(16px, 1, 400, "Playfair Display", 0.15px),
+  $subheading-1: mat.define-typography-level(14px, 1, 400, "Playfair Display", 0.1px),
+  $body-1: mat.define-typography-level(16px, 1.7em, 300, Montserrat, 0.5px),
+  $body-2: mat.define-typography-level(14px, 1.7em, 300, Montserrat, 0.25px),
+  $caption: mat.define-typography-level(12px, 1, 700, Montserrat, 0.4px),
+  $button: mat.define-typography-level(14px, 1, 700, Montserrat, 1.25px),
+);
+
+$loki: mat.define-dark-theme((
+  color: (
+    primary: $loki-primary,
+    accent: $loki-accent,
+    warn: $loki-warn
+  ),
+  typography: $loki-typography,
+));
+
+.loki {
+  @include mat.all-component-themes($loki);
+  @include mat.core($loki-typography);
+}
+
+// CSS
+body {margin: 0;}
