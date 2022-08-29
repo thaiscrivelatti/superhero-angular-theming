@@ -105,8 +105,10 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "baseHref": "https://thaiscrivelatti.github.io/superhero-angular-theming/",
-          "name": "Superhero Angular Theming"
+          "options": {
+            "baseHref": "https://thaiscrivelatti.github.io/superhero-angular-theming/",
+            "name": "Superhero Angular Theming"
+          }
         }
       }
     }
