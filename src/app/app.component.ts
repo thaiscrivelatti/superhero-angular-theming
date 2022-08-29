@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'superhero-theming';
   public quote: String = "Angular Theming Project";
   public about: String = 'Choose a hero (or the villain) in the menu above to change this site theme. The purpose of this project was learning how to make a custom theme with Angular, changing its colors and typography. Right now you are seeing Angular Indigo-Pink theme.';
-  public imgsrc: String = '/assets/heroes.png';
+  public imgsrc: String = '';
   public font1: String = 'Roboto - Regular';
   public font2: String = 'Roboto - Regular';
   public font3: String = 'Roboto - Semibold';
@@ -61,7 +61,7 @@ export class AppComponent {
       default:
         this.quote = "Angular Theming Project";
         this.about = 'Choose a hero (or the villain) in the menu above to change this site theme. The purpose of this project was learning how to make a custom theme with Angular, changing its colors and typography. Right now you are seeing Angular Indigo-Pink theme.';
-        this.imgsrc = '/assets/heroes.png';
+        this.imgsrc = '';
         this.font1 = 'Roboto - Regular';
         this.font2 = 'Roboto - Regular';
         this.font3 = 'Roboto - Semibold';
