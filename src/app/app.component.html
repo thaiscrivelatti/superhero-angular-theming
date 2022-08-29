@@ -45,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div class="image-wrapper">
+    <div class="image-wrapper" *ngIf="imgsrc != ''">
       <img src="{{ imgsrc }}" alt="">
       <p class="mat-caption"><a mat-button href="{{ source }}" target="_blank"> Source </a></p>
     </div>
