@@ -14,6 +14,7 @@ export class AppComponent {
   public font1: String = 'Roboto - Regular';
   public font2: String = 'Roboto - Regular';
   public font3: String = 'Roboto - Semibold';
+  public source: String = '';
 
   @HostBinding('class') className = '';
 
@@ -36,7 +37,8 @@ export class AppComponent {
         this.font1 = "Barlow Condensed - Regular";
         this.font2 = "Rasa - Light";
         this.font3 = "Barlow - SemiBold";
-        this.imgsrc = "/assets/ironman.png"
+        this.imgsrc = "/assets/ironman.jpg"
+        this.source = "https://www.deviantart.com/soopernoodles/art/Iron-Stark-455739370"
         break;
       case "captain":
         this.quote = '"I can do this all day."';
@@ -44,7 +46,8 @@ export class AppComponent {
         this.font1 = "Libre Baskerville - Bold";
         this.font2 = "Libre Baskerville - Regular";
         this.font3 = "Work Sans - Bold";
-        this.imgsrc = "/assets/captainshield.png"
+        this.imgsrc = "/assets/captain.jpg"
+        this.source = "https://www.deviantart.com/soopernoodles/art/Captain-Rogers-455739757";
         break;
       case "loki":
         this.quote = '"I am burdened with glorious purpose."';
@@ -52,7 +55,8 @@ export class AppComponent {
         this.font1 = "Playfair Display - Italic";
         this.font2 = "Monteserrat - Light";
         this.font3 = "Montserrat - Bold";
-        this.imgsrc = "/assets/loki.png"
+        this.imgsrc = "/assets/loki.jpg"
+        this.source = "https://www.deviantart.com/soopernoodles/art/Loki-Laufeyson-457238337";
         break;
       default:
         this.quote = "Angular Theming Project";

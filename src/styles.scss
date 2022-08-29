@@ -39,7 +39,7 @@ $captain-primary:  mat.define-palette(mat.$blue-palette);
 $captain-accent: mat.define-palette(mat.$gray-palette);
 $captain-warn: mat.define-palette(mat.$red-palette);
 $captain-typography: mat.define-typography-config(
-  $display-4: mat.define-typography-level(130px, 1, 700, "Libre Baskerville", -1.5px),
+  $display-4: mat.define-typography-level(90px, 1, 700, "Libre Baskerville", -1.5px),
   $display-3: mat.define-typography-level(82px, 1, 700, "Libre Baskerville", -0.5px),
   $display-2: mat.define-typography-level(65px, 1, 700, "Libre Baskerville", 0),
   $display-1: mat.define-typography-level(46px, 1, 700, "Libre Baskerville", 0.25px),

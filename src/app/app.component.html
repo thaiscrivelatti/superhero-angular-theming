@@ -14,42 +14,48 @@
       <h1 class="body-1" *ngIf="this.quote == ''">
         Escolha um tema
       </h1>
-      <h1 class="mat-display-2"> {{ quote }} </h1>
+      <h1 class="mat-display-1"> {{ quote }} </h1>
       <p class="mat-body-1"> {{ about }} </p>
-    </div>
-    <div class="image-wrapper">
-      <img src="{{ imgsrc }}" alt="">
-    </div>
-  </div>
+      <mat-divider></mat-divider>
 
-  <mat-divider></mat-divider>
-
-  <div class="theme-data">
-    <div class="theme-fonts">
-      <h3 class="mat-caption">Fonts</h3>
-      <p><span class="mat-body-2">Headings:</span> {{ font1 }}</p>
-      <p><span class="mat-body-2">Body:</span> {{ font2 }}</p>
-      <p><span class="mat-body-2">Buttons:</span> {{ font3 }}</p>
-    </div>
-
-    <div class="theme-colors-wrapper">
-      <h3 class="mat-caption">Colors</h3>
-      <div class="theme-colors">
-        <div class="item color-primary">
-          <button mat-fab color="primary"></button>
-          <p>Primary</p>
+      <div class="theme-data">
+        <div class="theme-fonts">
+          <h3 class="mat-caption">Fonts</h3>
+          <p><span class="mat-body-2">Headings:</span> {{ font1 }}</p>
+          <p><span class="mat-body-2">Body:</span> {{ font2 }}</p>
+          <p><span class="mat-body-2">Buttons:</span> {{ font3 }}</p>
         </div>
-        <div class="item color-accent">
-          <button mat-fab color="accent"></button>
-          <p>Accent</p>
-        </div>
-        <div class="item color-warn">
-          <button mat-fab color="warn"></button>
-          <p>Warn</p>
+
+        <div class="theme-colors-wrapper">
+          <h3 class="mat-caption">Colors</h3>
+          <div class="theme-colors">
+            <div class="item color-primary">
+              <button mat-fab color="primary"></button>
+              <p>Primary</p>
+            </div>
+            <div class="item color-accent">
+              <button mat-fab color="accent"></button>
+              <p>Accent</p>
+            </div>
+            <div class="item color-warn">
+              <button mat-fab color="warn"></button>
+              <p>Warn</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <div class="image-wrapper">
+      <img src="{{ imgsrc }}" alt="">
+      <p class="mat-caption"><a mat-button href="{{ source }}" target="_blank"> Source </a></p>
+    </div>
   </div>
 
-  <div class="footer"> Made by Thais with Angular </div>
+
+  <div class="footer">
+    <mat-divider></mat-divider>
+    <span class="mat-caption">Development by: <a mat-button class="md-accent" href="https://thaiscrivelatti.web.app">Thais</a></span>
+    <br>
+    <span class="mat-caption">Illustrations by: <a mat-button class="link" href="https://www.deviantart.com/soopernoodles">soopernoodles</a></span>
+  </div>
 </div>
