@@ -1,21 +1,49 @@
 <div class="container mat-app-background mat-typography">
   <mat-toolbar color="primary">
     <span>Super Hero Theming</span>
-    <span class="example-spacer"></span>
-    <button mat-button (click)="changeTheme('default')">Home</button>
-    <button mat-button (click)="changeTheme('ironman')">Iron Man</button>
-    <button mat-button (click)="changeTheme('captain')">Cpt. America</button>
-    <button mat-button (click)="changeTheme('loki')">Loki</button>
   </mat-toolbar>
 
-
   <div class="content-wrapper">
+    <div class="choose-wrapper">
+      <h1>Choose a theme</h1>
+      <div class="options-wrapper">
+        <div class="option" (click)="changeTheme('default')">
+          <img
+            class="default"
+            mat-card-image
+            src="/assets/angular.png"
+            alt="Theme example"
+          />
+        </div>
+        <div class="option" (click)="changeTheme('ironman')">
+          <img
+            mat-card-image
+            src="/assets/ironman.jpg"
+            alt="Theme example"
+          />
+        </div>
+        <div class="option" (click)="changeTheme('captain')">
+          <img
+            mat-card-image
+            src="/assets/captain.jpg"
+            alt="Theme example"
+          />
+        </div>
+        <div class="option" (click)="changeTheme('loki')">
+          <img
+            mat-card-image
+            src="/assets/loki.jpg"
+            alt="Theme example"
+          />
+        </div>
+      </div>
+    </div>
+
     <div class="quote-wrapper">
-      <h1 class="body-1" *ngIf="this.quote == ''">
-        Escolha um tema
-      </h1>
-      <h1 class="mat-display-1"> {{ quote }} </h1>
-      <p class="mat-body-1"> {{ about }} </p>
+      <div class="quote">
+        <h1 class="mat-display-1">{{ quote }}</h1>
+        <p class="mat-body-1">{{ about }}</p>
+      </div>
       <mat-divider></mat-divider>
 
       <div class="theme-data">
@@ -45,17 +73,29 @@
         </div>
       </div>
     </div>
+
+    <!--
     <div class="image-wrapper" *ngIf="imgsrc != ''">
       <img src="{{ imgsrc }}" alt="">
       <p class="mat-caption"><a mat-button href="{{ source }}" target="_blank"> Source </a></p>
     </div>
+     -->
   </div>
-
 
   <div class="footer">
     <mat-divider></mat-divider>
-    <span class="mat-caption">Development by: <a mat-button class="md-accent" href="https://thaiscrivelatti.web.app">Thais</a></span>
-    <br>
-    <span class="mat-caption">Illustrations by: <a mat-button class="link" href="https://www.deviantart.com/soopernoodles">soopernoodles</a></span>
+    <span class="mat-caption"
+      >Development by:
+      <a mat-button class="md-accent" href="https://thaiscrivelatti.web.app"
+        >Thais</a
+      ></span
+    >
+    <br />
+    <span class="mat-caption"
+      >Illustrations by:
+      <a mat-button class="link" href="https://www.deviantart.com/soopernoodles"
+        >soopernoodles</a
+      ></span
+    >
   </div>
 </div>

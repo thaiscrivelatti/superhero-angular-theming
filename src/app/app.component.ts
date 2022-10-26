@@ -9,7 +9,7 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 export class AppComponent {
   title = 'superhero-theming';
   public quote: String = "Angular Theming Project";
-  public about: String = 'Choose a hero (or the villain) in the menu above to change this site theme. The purpose of this project was learning how to make a custom theme with Angular, changing its colors and typography. Right now you are seeing Angular Indigo-Pink theme.';
+  public about: String = 'Choose a hero (or a villain) to change this site theme. The purpose of this project was learning how to make a custom theme with Angular, changing its colors and typography. Right now you are seeing Angular Indigo-Pink theme.';
   public imgsrc: String = '';
   public font1: String = 'Roboto - Regular';
   public font2: String = 'Roboto - Regular';
