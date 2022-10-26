@@ -60,7 +60,7 @@ export class AppComponent {
         break;
       default:
         this.quote = "Angular Theming Project";
-        this.about = 'Choose a hero (or the villain) in the menu above to change this site theme. The purpose of this project was learning how to make a custom theme with Angular, changing its colors and typography. Right now you are seeing Angular Indigo-Pink theme.';
+        this.about = 'The purpose of this project was learning how to make a custom theme with Angular, changing its colors and typography. Right now you are seeing Angular Indigo-Pink theme.';
         this.imgsrc = '';
         this.font1 = 'Roboto - Regular';
         this.font2 = 'Roboto - Regular';

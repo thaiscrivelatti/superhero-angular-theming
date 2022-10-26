@@ -1,11 +1,26 @@
 <div class="container mat-app-background mat-typography">
   <mat-toolbar color="primary">
     <span>Super Hero Theming</span>
+    <span class="example-spacer"></span>
+    <div class="credits">
+      <span class="mat-caption"> Development by:
+        <a mat-button class="md-accent" href="https://thaiscrivelatti.web.app">
+          Thais
+        </a>
+      </span>
+      <br>
+      <span class="mat-caption"> Illustrations by:
+        <a mat-button class="link" href="https://www.deviantart.com/soopernoodles">
+          soopernoodles
+          </a>
+          </span>
+    </div>
+    
   </mat-toolbar>
 
   <div class="content-wrapper">
     <div class="choose-wrapper">
-      <h1>Choose a theme</h1>
+      <h2>Choose a theme</h2>
       <div class="options-wrapper">
         <div class="option" (click)="changeTheme('default')">
           <img
@@ -43,9 +58,8 @@
       <div class="quote">
         <h1 class="mat-display-1">{{ quote }}</h1>
         <p class="mat-body-1">{{ about }}</p>
+        <mat-divider></mat-divider>
       </div>
-      <mat-divider></mat-divider>
-
       <div class="theme-data">
         <div class="theme-fonts-wrapper">
           <h3 class="mat-caption">Fonts</h3>
@@ -53,7 +67,7 @@
           <p><span class="mat-body-2">Body:</span> {{ font2 }}</p>
           <p><span class="mat-body-2">Buttons:</span> {{ font3 }}</p>
         </div>
-
+        
         <div class="theme-colors-wrapper">
           <h3 class="mat-caption">Colors</h3>
           <div class="theme-colors">
@@ -73,29 +87,23 @@
         </div>
       </div>
     </div>
-
-    <!--
-    <div class="image-wrapper" *ngIf="imgsrc != ''">
-      <img src="{{ imgsrc }}" alt="">
-      <p class="mat-caption"><a mat-button href="{{ source }}" target="_blank"> Source </a></p>
-    </div>
-     -->
   </div>
 
   <div class="footer">
     <mat-divider></mat-divider>
     <span class="mat-caption"
       >Development by:
-      <a mat-button class="md-accent" href="https://thaiscrivelatti.web.app"
-        >Thais</a
-      ></span
-    >
+      <a mat-button class="md-accent" href="https://thaiscrivelatti.web.app">
+        Thais
+      </a>
+    </span>
     <br />
     <span class="mat-caption"
       >Illustrations by:
-      <a mat-button class="link" href="https://www.deviantart.com/soopernoodles"
-        >soopernoodles</a
-      ></span
-    >
+      <a mat-button class="link" href="https://www.deviantart.com/soopernoodles">
+        soopernoodles
+        </a>
+        </span>
   </div>
+  
 </div>
