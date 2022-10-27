@@ -51,7 +51,7 @@
 }
 .option img {
   width: 100px;
-  margin-top: -15px;  
+  margin-top: -15px;
 }
 .default {
   width: 75px!important;
@@ -126,9 +126,9 @@
     flex-wrap: wrap;
   }
   .option{
-    width: 80px;
-    height: 80px;
-    margin: 20px;
+    width: 60px;
+    height: 60px;
+    margin: 12px;
   }
   .theme-fonts-wrapper, .theme-colors-wrapper {
     text-align: center;
@@ -136,7 +136,14 @@
   .theme-colors-wrapper {
     margin-top: 30px;
   }
-
+  .option img {
+    width: 60px;
+    margin-top: -10px;
+  }
+  .default {
+    width: 45px!important;
+    margin: 0px 0px -40px 8px;
+  }
 
 }
 
